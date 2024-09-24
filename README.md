@@ -1,31 +1,31 @@
 # Chocolatey Package Installer
-![ChocolateyPackageInstaller](/snap.png)
+![Chocolatey Package Installer](/snap.png)
 
-Это небольшое десктопное приложение для Windows, написанное на WPF и NET 8.0. Программа представляет из себя менеджер установки приложений при помощи Chocolatey.  
-Приложение всегда запускается от имени администратора.
+This is a small desktop application for Windows written in WPF and NET 8.0. The program is an application installation manager using Chocolatey.  
+The application is always run as an administrator.
 
-## Сборка
-Установите .NET 8.0 SDK и произведите сборку.
+## Assembly
+Install .NET 8.0 SDK and complete the build.
 
-## Использование
+## Usage
 
-Перед запуском нужно подготовить специальный .xml файл со список программ для установки.  
-Посетите https://community.chocolatey.org/packages и найдите нужный вам софт.  
-Сохраните .xml файл в директории программы по этому шаблону:
+Before launching, you need to prepare a special one.An xml file with a list of programs to install.  
+Visit https://community.chocolatey.org/packages and find the software you need.  
+Save it.an xml file in the program directory according to this template:
 
-```
+``
 <?xml version="1.0" encoding="UTF-8"?>
 <applications>
-    <app name="7zip">7zip</app>
-    <app name="Paint.NET">paint.net</app>
-    <app name="Libre Office">libreoffice-fresh</app>
-    <app name="Arduino IDE">arduino</app>
-    <app name="VS Code">vscode</app>
-    <app name="qBitTorrent">qbittorrent</app>
-    <app name="WinSCP">winscp</app>
+    <application named "7zip">7zip</application>
+    <application named "Paint.NET ">paint.net </application>
+    <application named "Libre Office">libreoffice-fresh</application>
+    <application named "Arduino IDE">arduino</application>
+    <application named "VS Code">vscode</application>
+    <application named "qBittorrent">qbittorrent</application>
+    <application named "WinSCP">winscp</application>
 </applications>
 ```
 
-Запустите ChocolateyPackageInstaller.exe.
-Если Chocolatey не установлен в вашей системе, нажмите Chocolatey Install.  
-Теперь вы можете устанавливать ваши программы. 
+Launch ChocolateyPackageInstaller.exe .
+If Chocolatey is not installed on your system, click Install Chocolatey.  
+Now you can install your own programs.
