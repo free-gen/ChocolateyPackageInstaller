@@ -5,7 +5,10 @@ This is a small desktop application for Windows written in WPF and NET 8.0. The 
 The application is always run as an administrator.
 
 ## Assembly
-Install .NET 8.0 SDK and complete the build.
+Install .NET 8.0 SDK and complete the build.  
+```
+dotnet publish -c Release -o ./output
+```
 
 ## Usage
 
@@ -13,7 +16,7 @@ Before launching, you need to prepare a special one.An xml file with a list of p
 Visit https://community.chocolatey.org/packages and find the software you need.  
 Save it.an xml file in the program directory according to this template:
 
-``
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <applications>
     <application named "7zip">7zip</application>
